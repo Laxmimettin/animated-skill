@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #172554;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.skills-section {
+    background: white;
+    width: 100%;
+    max-width: 750px;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(30, 41, 59, 0.10);
+}
+
+.subtitle {
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.description {
+    text-align: center;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 25px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.percentage {
+    color: #6366f1;
+}
+
+.progress-track {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.html {
+    background: linear-gradient(90deg, #f97316, #fb923c);
+}
+
+.css {
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+.javascript {
+    background: linear-gradient(90deg, #eab308, #facc15);
+}
+
+.react {
+    background: linear-gradient(90deg, #06b6d4, #67e8f9);
+}
+
+.node {
+    background: linear-gradient(90deg, #16a34a, #4ade80);
+}
+
+.mongo {
+    background: linear-gradient(90deg, #059669, #34d399);
+}
+
+#replay-btn {
+    display: block;
+    margin: 35px auto 0;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#replay-btn:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 15px;
+    }
+
+    .skills-section {
+        padding: 28px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar {
+        transition: none;
+    }
+
+    #replay-btn {
+        transition: none;
+    }
+}
